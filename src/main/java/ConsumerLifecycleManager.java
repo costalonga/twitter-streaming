@@ -36,7 +36,7 @@ public class ConsumerLifecycleManager implements LifecycleManager {
         if (consumer == null) {
             consumer = getConsumerInstance();
             // Subscrever o consumidor para o nosso(s) tópico(s)
-            consumer.subscribe(Collections.singleton("meu_topico"));
+            consumer.subscribe(Collections.singleton("kafka_consumer_topic"));
         }
         while (consumer != null) {  // Apenas como demo, usaremos um loop infinito
             ConsumerRecords<String, String> poll = consumer.poll(Duration.ofMillis(1000));

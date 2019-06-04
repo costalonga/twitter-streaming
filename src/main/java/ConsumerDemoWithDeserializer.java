@@ -28,7 +28,7 @@
 //        KafkaConsumer<String ,User> consumer = new KafkaConsumer<>(properties);
 //
 //        // Subscrever o consumidor para o nosso(s) tópico(s)
-//        consumer.subscribe(Collections.singleton("meu_topico"));
+//        consumer.subscribe(Collections.singleton("meu-topico"));
 //
 //        // Ler as mensagens
 //        while (true) {  // Apenas como demo, usaremos um loop infinito
